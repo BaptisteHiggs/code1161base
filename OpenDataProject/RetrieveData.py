@@ -144,7 +144,7 @@ def alreadyPresentQuestion(question, csv='CSV', both='BOTH',
             print "Quitting in process..."
             running = False
             break
-        elif userInput2.upper == both:
+        elif userInput2.upper() == both:
             print "This will most likely take some time."
             print "Beginning file downloading process..."
             time.sleep(3)
@@ -161,7 +161,7 @@ def alreadyPresentQuestion(question, csv='CSV', both='BOTH',
             print "Quitting in process..."
             running = False
             break
-        elif userInput2.upper == neither:
+        elif userInput2.upper() == neither:
             print "Quitting in process..."
             running = False
             break
@@ -229,7 +229,7 @@ def main():
                 running = False
                 # Fake return to skip the downloading of the location data
                 return ''
-        elif userInput.upper == "N" or userInput.upper() == "NO":
+        elif userInput.upper() == "N" or userInput.upper() == "NO":
             print "Quitting in process..."
             running = False
             break
